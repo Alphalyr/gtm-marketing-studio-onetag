@@ -1,5 +1,5 @@
 homepage: https://www.alphalyr.com
 documentation: https://github.com/alphalyr/marketing-studio-gtm
 versions:
-  - sha: 0784f08d986497df9c60c1b834824c8804eda1e7
+  - sha: e2014d841edc977cdcb0620dd4c351be91e4f05a
     changeNotes: Initial release.
