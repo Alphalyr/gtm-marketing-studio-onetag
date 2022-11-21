@@ -1,4 +1,4 @@
-# AlphalyrMarketingStudio for Google Tag Manager (GTM)
+# Alphalyr Marketing Studio for Google Tag Manager (GTM)
 
 Google Tag Manager connector for Alphalyr Marketing Studio.
 
