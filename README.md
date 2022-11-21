@@ -16,7 +16,7 @@ The source for the GTM template is in the [`src/`](src) folder and gets exported
 
 ## Credits
 
-Thanks to [Yoan Yahemdi](https://tagexpert.fr/) for his work on the custom template.
+[Yoan Yahemdi](https://tagexpert.fr/).
 
 ## License
 
