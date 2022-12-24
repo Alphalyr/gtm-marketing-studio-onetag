@@ -121,7 +121,7 @@ ___TEMPLATE_PARAMETERS___
       {
         "type": "TEXT",
         "name": "productId",
-        "displayName": "Unique product identifier.",
+        "displayName": "Product ID | Unique product identifier",
         "simpleValueType": true,
         "enablingConditions": [
           {
@@ -134,12 +134,13 @@ ___TEMPLATE_PARAMETERS___
           {
             "type": "NON_EMPTY"
           }
-        ]
+        ],
+        "help": "Match to \"prodId\" in technical documentation."
       },
       {
         "type": "TEXT",
         "name": "productDescription",
-        "displayName": "Product description.",
+        "displayName": "Product Description",
         "simpleValueType": true,
         "enablingConditions": [
           {
@@ -147,12 +148,13 @@ ___TEMPLATE_PARAMETERS___
             "paramValue": "product",
             "type": "EQUALS"
           }
-        ]
+        ],
+        "help": "Match to \"prodDescription\" in technical documentation."
       },
       {
         "type": "TEXT",
         "name": "productPrice",
-        "displayName": "Unit price excluding tax of the product.",
+        "displayName": "Product Price | Unit price excluding tax of the product",
         "simpleValueType": true,
         "enablingConditions": [
           {
@@ -165,14 +167,15 @@ ___TEMPLATE_PARAMETERS___
           {
             "type": "NON_EMPTY"
           }
-        ]
+        ],
+        "help": "Match to \"prodPrice\" in technical documentation."
       },
       {
         "type": "TEXT",
         "name": "categoryId",
         "displayName": "Category ID",
         "simpleValueType": true,
-        "help": "Unique identifier of the product category.",
+        "help": "Match to \"catId\" in technical documentation. Unique identifier of the product category.",
         "enablingConditions": [
           {
             "paramName": "trackType",
@@ -186,7 +189,7 @@ ___TEMPLATE_PARAMETERS___
         "name": "categoryDescription",
         "displayName": "Category Description",
         "simpleValueType": true,
-        "help": "Description of the current category.",
+        "help": "Match to \"catDescription\" in technical documentation. Description of the current category.",
         "enablingConditions": [
           {
             "paramName": "trackType",
@@ -198,9 +201,9 @@ ___TEMPLATE_PARAMETERS___
       {
         "type": "TEXT",
         "name": "basketTotalPrice",
-        "displayName": "Basket total price without tax and without shipping",
+        "displayName": "Total Price",
         "simpleValueType": true,
-        "help": "Total price of the basket excluding tax and delivery charges.",
+        "help": "Match to \"totalPrice\" in technical documentation.Total price of the basket excluding tax and excluding shipping price.",
         "enablingConditions": [
           {
             "paramName": "trackType",
@@ -212,9 +215,9 @@ ___TEMPLATE_PARAMETERS___
       {
         "type": "TEXT",
         "name": "addTotalPrice",
-        "displayName": "Add to basket total price without tax and without shipping",
+        "displayName": "Total Price",
         "simpleValueType": true,
-        "help": "Total price of the product added to basket excluding tax and delivery.",
+        "help": "Total price of the product added to basket excluding tax and excluding delivery.",
         "enablingConditions": [
           {
             "paramName": "trackType",
@@ -228,7 +231,7 @@ ___TEMPLATE_PARAMETERS___
         "name": "transactionId",
         "displayName": "Transaction ID",
         "simpleValueType": true,
-        "help": "Unique order reference.",
+        "help": "Match to \"reference\" in technical documentation.\nUnique order reference.",
         "enablingConditions": [
           {
             "paramName": "trackType",
@@ -247,7 +250,7 @@ ___TEMPLATE_PARAMETERS___
         "name": "leadTransactionId",
         "displayName": "Lead Reference ID",
         "simpleValueType": true,
-        "help": "Unique lead reference.",
+        "help": "Match to \"reference\" in technical documentation.\nUnique lead reference.",
         "enablingConditions": [
           {
             "paramName": "trackType",
@@ -308,19 +311,20 @@ ___TEMPLATE_PARAMETERS___
             "type": "EQUALS"
           }
         ],
-        "help": "This value must be filled in as follows: \u0026products\u003dPRODUCT_ID_1:PRODUCT_QUANTITY_1:PRODUCT_UNIT_PRICE_1; PRODUCT_ID_2:PRODUCT_QUANTITY_2:PRODUCT_UNIT_PRICE_2 \n\nNote that the delimiters used are the characters \":\" for the different fields of a single product type and \" ; \" to delimit several types of products.",
+        "help": "This value must be filled in as follows: \n\nPRODUCTID1:PRODUCTQUANTITY1:PRODUCTUNITPRICE1; PRODUCTID2:PRODUCTQUANTITY2:PRODUCTUNITPRICE2 \n\nNote that the delimiters used are the characters \":\" for the different fields of a single product type and \" ; \" to delimit several types of products.",
         "valueValidators": [
           {
             "type": "NON_EMPTY"
           }
-        ]
+        ],
+        "valueHint": "PRODUCT_ID_1:PRODUCT_QUANTITY_1:PRODUCT_UNIT_PRICE_1; PRODUCT_ID_2:PRODUCT_QUANTITY_2:PRODUCT_UNIT_PRICE_2"
       },
       {
         "type": "TEXT",
         "name": "confirmationTotalPricewithout",
-        "displayName": "Purchase total price without tax and without shipping",
+        "displayName": "Total Price | Excluding tax and delivery",
         "simpleValueType": true,
-        "help": "Total price of the purchase excluding tax and delivery.",
+        "help": "Match to \"totalPrice\" in technical documentation.\nTotal price of the purchase excluding tax and excluding delivery.",
         "enablingConditions": [
           {
             "paramName": "trackType",
@@ -332,9 +336,9 @@ ___TEMPLATE_PARAMETERS___
       {
         "type": "TEXT",
         "name": "confirmationTotalPricewith",
-        "displayName": "Purchase total price with tax and without shipping",
+        "displayName": "Total Price | Including tax and excluding delivery",
         "simpleValueType": true,
-        "help": "Total price of the purchase including tax but excluding delivery.",
+        "help": "Match to \"totalPriceWithTax\" in technical documentation.\nTotal price of the purchase including tax but excluding delivery.",
         "enablingConditions": [
           {
             "paramName": "trackType",
@@ -355,7 +359,7 @@ ___TEMPLATE_PARAMETERS___
             "type": "EQUALS"
           }
         ],
-        "help": "Takes the value \"0\" when it is an old client and \"1\" when it is a new client."
+        "help": "Match to \"new\" in technical documentation.\nTakes the value \"0\" when it is an old client and \"1\" when it is a new client."
       },
       {
         "type": "TEXT",
@@ -369,7 +373,7 @@ ___TEMPLATE_PARAMETERS___
             "type": "EQUALS"
           }
         ],
-        "help": "Refers to the discount code applied to the order."
+        "help": "Match to \"discountCode\" in technical documentation.\nRefers to the discount code applied to the order."
       },
       {
         "type": "TEXT",
@@ -383,7 +387,7 @@ ___TEMPLATE_PARAMETERS___
             "type": "EQUALS"
           }
         ],
-        "help": "Refers to the total amount of the discount applied with the coupon code."
+        "help": "Match to \"discountAmount\" in technical documentation.\nRefers to the total amount of the discount applied with the coupon code."
       },
       {
         "type": "GROUP",
@@ -394,15 +398,15 @@ ___TEMPLATE_PARAMETERS___
           {
             "type": "TEXT",
             "name": "confirmationShippingPrice",
-            "displayName": "Purchase total shipping price",
+            "displayName": "Total Shipping HT",
             "simpleValueType": true,
-            "help": "Total price of the delivery/shipping excluding tax.",
+            "help": "Match to \"transactionshippingHT\" in technical documentation.\nTotal price of the delivery/shipping excluding tax.",
             "enablingConditions": []
           },
           {
             "type": "TEXT",
             "name": "confirmationOtherPrice",
-            "displayName": "Purchase other prices",
+            "displayName": "Total other price",
             "simpleValueType": true,
             "help": "Optional - Miscellaneous total price (e.g. the amount of the discount with promo code).",
             "enablingConditions": []
@@ -452,7 +456,7 @@ ___TEMPLATE_PARAMETERS___
       {
         "type": "GROUP",
         "name": "AdvancedCategoryOptions",
-        "displayName": "Advanced Transaction Options",
+        "displayName": "Advanced Category Options",
         "groupStyle": "ZIPPY_CLOSED",
         "subParams": [
           {
@@ -467,7 +471,7 @@ ___TEMPLATE_PARAMETERS___
         "enablingConditions": [
           {
             "paramName": "trackType",
-            "paramValue": "confirmation",
+            "paramValue": "category",
             "type": "EQUALS"
           }
         ]
@@ -515,22 +519,22 @@ ___TEMPLATE_PARAMETERS___
 
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
+const queryPermission = require('queryPermission');
+const injectScript = require('injectScript');
+const setInWindow = require('setInWindow');
+const encodeUri = require('encodeUri');
 const log = require('logToConsole');
-const sendPixel = require('sendPixel');
 const getUrl = require('getUrl');
-const encodeUriComponent = require("encodeUriComponent");
 
 
-// onSuccess, onFailure for launching the tracking code
+
 const onSuccess = () => {
-    log('Alphalyr Marketing Studio loaded successfully.');
-    data.gtmOnSuccess();
-  };
-  
-  const onFailure = () => {
-    log('Alphalyr Marketing Studio has failed to load.');
-    data.gtmOnFailure();
-  };
+  data.gtmOnSuccess();
+};
+
+const onFailure = () => {
+  data.gtmOnFailure();
+};
 
 const TEMPLATE_VERSION = '1.0.0';
 const URL_PROTOCOL = getUrl('protocol');
@@ -572,8 +576,6 @@ let consentConstructor = '?aid=' + aid;
 log('Consent Constructor OK');
 
 
-
-
 // -------- PRODUCT PAGE DATA --------
 let prodId = data.productId || '';
 let prodDescription = data.productDescription || '';
@@ -582,6 +584,7 @@ let catIds = data.categoryId || '';
 
 let productPageConstructor = '&prodId=' + prodId + '&prodDescription=' + prodDescription + '&prodPrice=' + prodPrice + '&catIds=' + catIds;
 log('Product Page Constructor OK');
+
 
 // -------- PRODUCT ARRAY DATA --------
 let products = data.productTable || '';
@@ -697,7 +700,16 @@ log('Tracker Constructor OK');
 
 log(MARKETINGSTUDIO_LIBRARY_URL + finalConstructor);
 
-sendPixel(MARKETINGSTUDIO_LIBRARY_URL + encodeUriComponent(finalConstructor), onSuccess, onFailure);
+let elitrackendpoint = encodeUri(MARKETINGSTUDIO_LIBRARY_URL + finalConstructor);
+
+log(elitrackendpoint);
+log('test');
+
+if (queryPermission('inject_script', elitrackendpoint)) {
+   injectScript(elitrackendpoint);
+} else {
+  data.gtmOnFailure();
+}
 
 
 ___WEB_PERMISSIONS___
@@ -755,18 +767,36 @@ ___WEB_PERMISSIONS___
   {
     "instance": {
       "key": {
-        "publicId": "send_pixel",
+        "publicId": "inject_script",
         "versionId": "1"
       },
       "param": [
         {
-          "key": "allowedUrls",
+          "key": "urls",
           "value": {
-            "type": 1,
-            "string": "specific"
+            "type": 2,
+            "listItem": [
+              {
+                "type": 1,
+                "string": "https://tck.elitrack.com/"
+              }
+            ]
           }
         }
       ]
+    },
+    "clientAnnotations": {
+      "isEditedByUser": true
+    },
+    "isRequired": true
+  },
+  {
+    "instance": {
+      "key": {
+        "publicId": "access_globals",
+        "versionId": "1"
+      },
+      "param": []
     },
     "isRequired": true
   }
@@ -781,5 +811,3 @@ scenarios: []
 ___NOTES___
 
 Created on 21.11.2022 14:33:16
-
-
