@@ -12,7 +12,7 @@ Before working on the project, make sure to **disable any ad blockers**.
 
 ### Folder structure
 
-The source for the GTM template is in the [`src/`](src) folder and gets exported to the `./template.tpl` file.
+The source for the GTM template is in the `./template.tpl` file.
 
 ## Credits
 
@@ -20,4 +20,4 @@ The source for the GTM template is in the [`src/`](src) folder and gets exported
 
 ## License
 
-MIT
+Apache 2.0

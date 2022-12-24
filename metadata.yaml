@@ -1,5 +1,7 @@
 homepage: https://www.alphalyr.com
-documentation: https://github.com/alphalyr/marketing-studio-gtm
+documentation: https://faq.alphalyr.com/knowledge/marketing-studio
 versions:
+  - sha: 95f5ce6bb586246163bf3484f174553c19c555e1
+    changeNotes: Main functional update on the tag and some updates on variable description.
   - sha: e2014d841edc977cdcb0620dd4c351be91e4f05a
     changeNotes: Initial release.
