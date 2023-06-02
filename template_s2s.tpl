@@ -39,40 +39,6 @@ ___TEMPLATE_PARAMETERS___
 
 [
   {
-    "type": "SELECT",
-    "name": "trackType",
-    "displayName": "Tracking type",
-    "macrosInSelect": false,
-    "selectItems": [
-      {
-        "value": "home",
-        "displayValue": "Home page"
-      },
-      {
-        "value": "category",
-        "displayValue": "Category page"
-      },
-      {
-        "value": "product",
-        "displayValue": "Product page"
-      },
-      {
-        "value": "cart",
-        "displayValue": "Cart page"
-      },
-      {
-        "value": "confirmation",
-        "displayValue": "Transaction page"
-      },
-      {
-        "value": "other",
-        "displayValue": "Other page"
-      }
-    ],
-    "simpleValueType": true,
-    "help": "Your track type method."
-  },
-  {
     "type": "GROUP",
     "name": "InitOptions",
     "displayName": "Init Options",
