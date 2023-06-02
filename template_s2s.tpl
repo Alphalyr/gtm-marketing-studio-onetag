@@ -635,11 +635,11 @@ function getData(key) {
     return (d.value - d.tax - d.shipping);
   }
   
-  if (key == 'confirmationDiscountAmount') {
+  if (key == 'confirmationDiscountAmount' && typeof(d.items) != 'undefined') {
     return parseDiscount(d.items);
   }
   
-  if (key == 'productTable') {
+  if (key == 'productTable' && typeof(d.items) != 'undefined') {
     return parseItems(d.items);
   }
   
@@ -682,7 +682,7 @@ let genericConstructor = '?page=' + page + '&aid=' + aid + '&cid=' + cid;
 
 genericConstructor += '&uuid=' + getData('uuid');
 genericConstructor += '&referrer=' + encodeUriComponent(getData('referrer'));
-genericConstructor += '&ip_address=' + getData('ip_address');
+genericConstructor += '&ip_address=' + getData('ip_override');
 genericConstructor += '&user_agent=' + encodeUriComponent(getData('user_agent'));
 let pageLocation = getData('page_location') || '';
 
