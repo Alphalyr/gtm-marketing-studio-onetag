@@ -279,8 +279,11 @@ let consentConstructor = '?aid=' + aid;
 
 
 // -------- PRODUCT PAGE DATA --------
-let items = getData('items');
-let item = items[0];
+let items = getData('items') || [];
+let item = {};
+if (typeof(items[0]) != 'undefined') {
+  item = items[0];
+}
 let prodId = item.item_id || '';
 let prodDescription = item.item_name || '';
 let prodPrice = getData('value') || '';
