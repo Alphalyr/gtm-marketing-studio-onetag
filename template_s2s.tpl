@@ -1,3 +1,11 @@
+﻿___TERMS_OF_SERVICE___
+
+By creating or modifying this file you agree to Google Tag Manager's Community
+Template Gallery Developer Terms of Service available at
+https://developers.google.com/tag-manager/gallery-tos (or such other URL as
+Google may provide), as modified from time to time.
+
+
 ___INFO___
 
 {
@@ -14,15 +22,15 @@ ___INFO___
   "id": "cvt_temp_public_id",
   "version": 1,
   "securityGroups": [],
-  "displayName": "Alphalyr Marketing Studio",
+  "displayName": "Alphalyr Marketing Studio S2S",
   "brand": {
     "id": "github.com_Alphalyr",
     "displayName": "Alphalyr",
     "thumbnail": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAACVCAMAAADhTaF7AAAAM1BMVEWRWYu1kLHayNh1MG728fXIrMWjdZ5+Pnft4+zj1eKITIGaZ5XRus6tg6i+nrtsImT///8sTjt0AAAAEXRSTlP/////////////////////ACWtmWIAAAAJcEhZcwAACxMAAAsTAQCanBgAAAW4aVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA3LjEtYzAwMCA3OS5lZGEyYjNmYWMsIDIwMjEvMTEvMTctMTc6MjM6MTkgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMy4xIChNYWNpbnRvc2gpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMi0xMS0yMVQxMzo0ODowN1oiIHhtcDpNb2RpZnlEYXRlPSIyMDIyLTExLTIxVDEzOjUwOjE3WiIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMi0xMS0yMVQxMzo1MDoxN1oiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIyIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjI0YzE2ZDc0LWQyZDctNDdlNy1iYWZmLWEyZmNhYzNmNzkyYSIgeG1wTU06RG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOmFiY2Y5NDI2LWI3MTItOTI0NC1hNTExLTM2YThmMzg3MDZiOCIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjBmNGYyZWY4LWZhNDUtNDlhYi04NjhhLThlYzBkZWViZDE3NyI+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNyZWF0ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MGY0ZjJlZjgtZmE0NS00OWFiLTg2OGEtOGVjMGRlZWJkMTc3IiBzdEV2dDp3aGVuPSIyMDIyLTExLTIxVDEzOjQ4OjA3WiIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKE1hY2ludG9zaCkiLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjI0YzE2ZDc0LWQyZDctNDdlNy1iYWZmLWEyZmNhYzNmNzkyYSIgc3RFdnQ6d2hlbj0iMjAyMi0xMS0yMVQxMzo1MDoxN1oiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMy4xIChNYWNpbnRvc2gpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pt+akxIAAAZ4SURBVHja7ZzZlqwqDIbDICIq8P5Puy+qz+5SGfIDWrXXOrntLv0MmQgDxX9AaOTD5Jt8HaSVwtAcTjKTEdJ+BaQUpEJB1CrkRyGtXwNLVm8/A2m9C4C4Ds5WyIkCLDQ9CWl3FZpECfsQpDWhQ4x9ALIPsQ2TnkYMIQSj74QUKgwRJW6DlHMYJrO8BVKbMFR2PR5ypBpRZXIh93CDiKGQ1oVbhPQ4SKnCTaKWUZBT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\u003d"
   },
-  "description": "Implementation of tracking code for Alphalyr Marketing Studio\n@author Yoan Yahemdi\n@web https://alphalyr.com\n@version 2022-11-21",
+  "description": "Implementation of tracking code for Alphalyr Marketing Studio\n@author Sylvestre Ho\n@web https://alphalyr.com\n@version 2023-06-02",
   "containerContexts": [
-    "WEB"
+    "SERVER"
   ]
 }
 
@@ -75,23 +83,6 @@ ___TEMPLATE_PARAMETERS___
     ],
     "simpleValueType": true,
     "help": "Your track type method."
-  },
-  {
-    "type": "SELECT",
-    "name": "mode",
-    "displayName": "Mode du tag",
-    "macrosInSelect": true,
-    "selectItems": [
-      {
-        "value": "s2s",
-        "displayValue": "Server To Server"
-      },
-      {
-        "value": "client",
-        "displayValue": "Client To Server"
-      }
-    ],
-    "simpleValueType": true
   },
   {
     "type": "GROUP",
@@ -573,20 +564,13 @@ ___TEMPLATE_PARAMETERS___
 ]
 
 
-___SANDBOXED_JS_FOR_WEB_TEMPLATE___
+___SANDBOXED_JS_FOR_SERVER___
 
-const queryPermission = require('queryPermission');
-const injectScript = require('injectScript');
-const setInWindow = require('setInWindow');
-const encodeUri = require('encodeUri');
-const log = require('logToConsole');
-const getUrl = require('getUrl');
 const encodeUriComponent = require('encodeUriComponent');
-const sendHttpGet = require('sendHttpGet');
+const sendHttpRequest = require('sendHttpRequest');
 const getAllEventData = require('getAllEventData');
-const url = require('url');
-const querystring = require('querystring');
-const Object = require('Object');
+const parseUrl = require('parseUrl');
+
 
 const onSuccess = () => {
   data.gtmOnSuccess();
@@ -603,13 +587,14 @@ const ga4Map = {
 };
 
 function serverToServerCall(url, onSuccess, onFailure) {
-  sendHttpGet(url, (statusCode) => {
+  const requestHeaders = { method: 'GET' };
+  sendHttpRequest(url, (statusCode, headers, body) => {
     if (statusCode >= 200 && statusCode < 300) {
       onSuccess();
     } else {
       onFailure();
     }
-  });
+  }, requestHeaders, '');
 }
 
 const parseDiscount = (items) => {
@@ -663,38 +648,30 @@ function getData(key) {
 
 
 const TEMPLATE_VERSION = '1.0.1';
-const URL_PROTOCOL = getUrl('protocol');
 const MARKETINGSTUDIO_LIBRARY_URL = 'https://tck.elitrack.com/';
 
 let finalConstructor = '';
-
-
-let mode = getData('mode') || 'client';
 
 // -------- PATH CONSTRUCTOR --------
 let track = getData('trackType') || '';
 switch (track) {
     case 'consent':
-      track = 'consent';
+      track = 'consent/store';
     break;
 
     case 'lead':
-      track = 'lead';
+      track = 'lead/store';
     break;
 
     case 'confirmation':
-      track = 'track';
+      track = 'track/store';
     break;
 
     default:
-      track = 'tag';
+      track = 'tag/store';
 }
 
 let pathConstructor = track;
-
-if (mode == 's2s') {
-    pathConstructor += '/store';
-}
 
 // -------- GENERIC DATA --------
 let page = getData('trackType') || '';
@@ -702,22 +679,23 @@ let aid = getData('customerId') || '';
 let cid = getData('userEmail') || '';
 
 let genericConstructor = '?page=' + page + '&aid=' + aid + '&cid=' + cid;
-if (mode == 's2s') {
-  genericConstructor += '&uuid=' + getData('uuid');
-  genericConstructor += '&referrer=' + encodeUriComponent(getData('referrer'));
-  genericConstructor += '&ip_address=' + getData('ip_address');
-  genericConstructor += '&user_agent=' + encodeUriComponent(getData('user_agent'));
-  let pageLocation = getData('page_location') || '';
-  let parsedUrl = url.parse(pageLocation);
-  let parsedQs = querystring.parse(parsedUrl.query);
-  const keys = Object.keys(parsedQs);
-  keys.forEach((key, index) => {
-    genericConstructor += '&' + key + '=' + encodeUriComponent(parsedQs[key]);
-  });
+
+genericConstructor += '&uuid=' + getData('uuid');
+genericConstructor += '&referrer=' + encodeUriComponent(getData('referrer'));
+genericConstructor += '&ip_address=' + getData('ip_address');
+genericConstructor += '&user_agent=' + encodeUriComponent(getData('user_agent'));
+let pageLocation = getData('page_location') || '';
+
+const parsedUrl = parseUrl(pageLocation);
+const params = {};
+
+if (parsedUrl && parsedUrl.searchParams) {
+  for (let param in parsedUrl.searchParams) {
+    genericConstructor += '&' + param + '=' + encodeUriComponent(parsedUrl.searchParams[param]);
+  }
 }
-log('Generic Constructor OK');
+
 let consentConstructor = '?aid=' + aid;
-log('Consent Constructor OK');
 
 
 // -------- PRODUCT PAGE DATA --------
@@ -727,13 +705,11 @@ let prodPrice = getData('productPrice') || '';
 let catIds = getData('categoryId') || '';
 
 let productPageConstructor = '&prodId=' + prodId + '&prodDescription=' + prodDescription + '&prodPrice=' + prodPrice + '&catIds=' + catIds;
-log('Product Page Constructor OK');
 
 
 // -------- PRODUCT ARRAY DATA --------
 let products = getData('productTable') || '';
 let currency = getData('currency') || '';
-log('Product Array Constructor OK');
 
 
 // -------- CATEGORY PAGE DATA --------
@@ -742,20 +718,17 @@ let catDescription = getData('categoryDescription') || '';
 let parentIds = getData('categoryParentIds') || '';
 
 let categoryPageConstructor = '&catId=' + catId + '&catDescription=' + catDescription + '&parentIds=' + parentIds;
-log('Category Page Constructor OK');
 
 // -------- CART PAGE DATA --------
 let cartTotalPrice = data.basketTotalPrice || '';
 
 let cartPageConstructor = '&products=' + products + '&totalPrice=' + cartTotalPrice + '&currency=' + currency;
-log('CART Page Constructor OK');
 
 
 // -------- ADD TO CART DATA --------
 let addTotalPrice = getData('addTotalPrice') || '';
 
 let cartAddConstructor = '&products=' + products + '&totalPrice=' + addTotalPrice + '&currency=' + currency;
-log('AddToCart Constructor OK');
 
 // -------- TRANSACTION DATA --------
 let referenceTransaction = getData('transactionId') || '';
@@ -771,13 +744,11 @@ let customDataKey = '';
 let customDataValue = '';
 
 let transactionPageConstructor = '&products=' + products + '&totalPrice=' + transactionTotalPrice + '&totalPriceWithTax=' + totalPriceWithTax + '&shippingPrice=' + shippingPrice + '&otherPrice=' + otherPrice + '&reference=' + referenceTransaction + '&new=' + clientType + '&currency=' + currency + '&discountCode=' + discountCode + '&discountAmount=' + discountAmount + '&defer=' + defer;
-log('Transaction Page Constructor OK');
 
 // -------- LEAD CONFIRMATION DATA --------
 let leadreference = getData('leadTransactionId') || '';
 
 let leadPageConstructor = '&reference=' + leadreference;
-log('Lead Page Constructor OK');
 
 
 
@@ -795,7 +766,6 @@ if (consent_performance == null || consent_performance == '' || consent_performa
   consent_performance = 0;
 }
 let gdprConstructor = '&gdpr_consent=' + gdpr_consent + '&consent_ads=' + consent_ads + '&consent_performance=' + consent_performance;
-log('GDPR Page Constructor OK');
 
 // -------- TRACKER CONSTRUCTOR --------
 let tracker = getData('trackType');
@@ -839,40 +809,28 @@ switch (tracker) {
     default: finalConstructor = pathConstructor + genericConstructor + gdprConstructor;
 
 }
-log('Tracker Constructor OK');
-
-log(MARKETINGSTUDIO_LIBRARY_URL + finalConstructor);
-
-let elitrackendpoint = encodeUri(MARKETINGSTUDIO_LIBRARY_URL + finalConstructor);
-
-log(elitrackendpoint);
-
-if (mode == 'client') {
-    if (queryPermission('inject_script', elitrackendpoint)) {
-       injectScript(elitrackendpoint);
-    } else {
-      onFailure();
-    }
-} else if (mode == 's2s') {
-    serverToServerCall(elitrackendpoint, onSuccess, onFailure);    
-}
 
 
-___WEB_PERMISSIONS___
+let elitrackendpoint = MARKETINGSTUDIO_LIBRARY_URL + finalConstructor;
+
+serverToServerCall(elitrackendpoint, onSuccess, onFailure);
+
+
+___SERVER_PERMISSIONS___
 
 [
   {
     "instance": {
       "key": {
-        "publicId": "logging",
+        "publicId": "read_event_data",
         "versionId": "1"
       },
       "param": [
         {
-          "key": "environments",
+          "key": "eventDataAccess",
           "value": {
             "type": 1,
-            "string": "all"
+            "string": "any"
           }
         }
       ]
@@ -885,38 +843,17 @@ ___WEB_PERMISSIONS___
   {
     "instance": {
       "key": {
-        "publicId": "get_url",
+        "publicId": "send_http",
         "versionId": "1"
       },
       "param": [
         {
-          "key": "urlParts",
+          "key": "allowedUrls",
           "value": {
             "type": 1,
-            "string": "any"
+            "string": "specific"
           }
         },
-        {
-          "key": "queriesAllowed",
-          "value": {
-            "type": 1,
-            "string": "any"
-          }
-        }
-      ]
-    },
-    "clientAnnotations": {
-      "isEditedByUser": true
-    },
-    "isRequired": true
-  },
-  {
-    "instance": {
-      "key": {
-        "publicId": "inject_script",
-        "versionId": "1"
-      },
-      "param": [
         {
           "key": "urls",
           "value": {
@@ -924,7 +861,7 @@ ___WEB_PERMISSIONS___
             "listItem": [
               {
                 "type": 1,
-                "string": "https://tck.elitrack.com/"
+                "string": "https://tck.elitrack.com/*"
               }
             ]
           }
@@ -933,16 +870,6 @@ ___WEB_PERMISSIONS___
     },
     "clientAnnotations": {
       "isEditedByUser": true
-    },
-    "isRequired": true
-  },
-  {
-    "instance": {
-      "key": {
-        "publicId": "access_globals",
-        "versionId": "1"
-      },
-      "param": []
     },
     "isRequired": true
   }
