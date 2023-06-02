@@ -61,20 +61,8 @@ ___TEMPLATE_PARAMETERS___
         "displayValue": "Cart page"
       },
       {
-        "value": "addToCart",
-        "displayValue": "Add to cart"
-      },
-      {
         "value": "confirmation",
         "displayValue": "Transaction page"
-      },
-      {
-        "value": "consentping",
-        "displayValue": "Consent ping"
-      },
-      {
-        "value": "lead",
-        "displayValue": "Lead confirmation page"
       },
       {
         "value": "other",
@@ -112,33 +100,6 @@ ___TEMPLATE_PARAMETERS___
       },
       {
         "type": "TEXT",
-        "name": "page_location",
-        "displayName": "Page Location",
-        "simpleValueType": true,
-        "help": "Page Location including URL parameters",
-        "enablingConditions": [
-          {
-            "paramName": "mode",
-            "paramValue": "s2s",
-            "type": "EQUALS"
-          }
-        ]
-      },
-      {
-        "type": "TEXT",
-        "name": "referrer",
-        "displayName": "Referrer URL",
-        "simpleValueType": true,
-        "enablingConditions": [
-          {
-            "paramName": "mode",
-            "paramValue": "s2s",
-            "type": "EQUALS"
-          }
-        ]
-      },
-      {
-        "type": "TEXT",
         "name": "uuid",
         "displayName": "UUID",
         "simpleValueType": true,
@@ -153,382 +114,11 @@ ___TEMPLATE_PARAMETERS___
       },
       {
         "type": "TEXT",
-        "name": "ip_address",
-        "displayName": "IP Address",
-        "simpleValueType": true,
-        "enablingConditions": [
-          {
-            "paramName": "mode",
-            "paramValue": "s2s",
-            "type": "EQUALS"
-          }
-        ]
-      },
-      {
-        "type": "TEXT",
-        "name": "user_agent",
-        "displayName": "User Agent",
-        "simpleValueType": true,
-        "enablingConditions": [
-          {
-            "paramName": "mode",
-            "paramValue": "s2s",
-            "type": "EQUALS"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "type": "GROUP",
-    "name": "EventOptions",
-    "displayName": "Product event details",
-    "groupStyle": "NO_ZIPPY",
-    "subParams": [
-      {
-        "type": "TEXT",
-        "name": "productId",
-        "displayName": "Product ID | Unique product identifier",
-        "simpleValueType": true,
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "product",
-            "type": "EQUALS"
-          }
-        ],
-        "valueValidators": [],
-        "help": "Match to \"prodId\" in technical documentation."
-      },
-      {
-        "type": "TEXT",
-        "name": "productDescription",
-        "displayName": "Product Description",
-        "simpleValueType": true,
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "product",
-            "type": "EQUALS"
-          }
-        ],
-        "help": "Match to \"prodDescription\" in technical documentation."
-      },
-      {
-        "type": "TEXT",
-        "name": "productPrice",
-        "displayName": "Product Price | Unit price excluding tax of the product",
-        "simpleValueType": true,
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "product",
-            "type": "EQUALS"
-          }
-        ],
-        "valueValidators": [],
-        "help": "Match to \"prodPrice\" in technical documentation."
-      },
-      {
-        "type": "TEXT",
-        "name": "categoryId",
-        "displayName": "Category ID",
-        "simpleValueType": true,
-        "help": "Match to \"catId\" in technical documentation. Unique identifier of the product category.",
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "category",
-            "type": "EQUALS"
-          }
-        ]
-      },
-      {
-        "type": "TEXT",
-        "name": "categoryDescription",
-        "displayName": "Category Description",
-        "simpleValueType": true,
-        "help": "Match to \"catDescription\" in technical documentation. Description of the current category.",
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "category",
-            "type": "EQUALS"
-          }
-        ]
-      },
-      {
-        "type": "TEXT",
-        "name": "basketTotalPrice",
-        "displayName": "Total Price",
-        "simpleValueType": true,
-        "help": "Match to \"totalPrice\" in technical documentation.Total price of the basket excluding tax and excluding shipping price.",
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "cart",
-            "type": "EQUALS"
-          }
-        ]
-      },
-      {
-        "type": "TEXT",
-        "name": "addTotalPrice",
-        "displayName": "Total Price",
-        "simpleValueType": true,
-        "help": "Total price of the product added to basket excluding tax and excluding delivery.",
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "addToCart",
-            "type": "EQUALS"
-          }
-        ]
-      },
-      {
-        "type": "TEXT",
-        "name": "transactionId",
-        "displayName": "Transaction ID",
-        "simpleValueType": true,
-        "help": "Match to \"reference\" in technical documentation.\nUnique order reference.",
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "confirmation",
-            "type": "EQUALS"
-          }
-        ],
-        "valueValidators": []
-      },
-      {
-        "type": "TEXT",
-        "name": "leadTransactionId",
-        "displayName": "Lead Reference ID",
-        "simpleValueType": true,
-        "help": "Match to \"reference\" in technical documentation.\nUnique lead reference.",
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "lead",
-            "type": "EQUALS"
-          }
-        ]
-      },
-      {
-        "type": "TEXT",
-        "name": "currency",
-        "displayName": "Currency",
-        "simpleValueType": true,
-        "help": "Refers to the ISO-4217 code of the currency (example: EUR).",
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "cart",
-            "type": "EQUALS"
-          },
-          {
-            "paramName": "trackType",
-            "paramValue": "addToCart",
-            "type": "EQUALS"
-          },
-          {
-            "paramName": "trackType",
-            "paramValue": "confirmation",
-            "type": "EQUALS"
-          }
-        ],
-        "valueHint": "EUR",
-        "valueValidators": []
-      },
-      {
-        "type": "TEXT",
-        "name": "productTable",
-        "displayName": "Products Array with ID, QUANTITY, PRICE",
-        "simpleValueType": true,
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "cart",
-            "type": "EQUALS"
-          },
-          {
-            "paramName": "trackType",
-            "paramValue": "addToCart",
-            "type": "EQUALS"
-          },
-          {
-            "paramName": "trackType",
-            "paramValue": "confirmation",
-            "type": "EQUALS"
-          }
-        ],
-        "help": "This value must be filled in as follows: \n\nPRODUCTID1:PRODUCTQUANTITY1:PRODUCTUNITPRICE1; PRODUCTID2:PRODUCTQUANTITY2:PRODUCTUNITPRICE2 \n\nNote that the delimiters used are the characters \":\" for the different fields of a single product type and \" ; \" to delimit several types of products.",
-        "valueValidators": [],
-        "valueHint": "PRODUCT_ID_1:PRODUCT_QUANTITY_1:PRODUCT_UNIT_PRICE_1; PRODUCT_ID_2:PRODUCT_QUANTITY_2:PRODUCT_UNIT_PRICE_2"
-      },
-      {
-        "type": "TEXT",
-        "name": "confirmationTotalPricewithout",
-        "displayName": "Total Price | Excluding tax and delivery",
-        "simpleValueType": true,
-        "help": "Match to \"totalPrice\" in technical documentation.\nTotal price of the purchase excluding tax and excluding delivery.",
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "confirmation",
-            "type": "EQUALS"
-          }
-        ]
-      },
-      {
-        "type": "TEXT",
-        "name": "confirmationTotalPricewith",
-        "displayName": "Total Price | Including tax and excluding delivery",
-        "simpleValueType": true,
-        "help": "Match to \"totalPriceWithTax\" in technical documentation.\nTotal price of the purchase including tax but excluding delivery.",
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "confirmation",
-            "type": "EQUALS"
-          }
-        ]
-      },
-      {
-        "type": "TEXT",
         "name": "confirmationCustomerType",
         "displayName": "Customer Type",
         "simpleValueType": true,
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "confirmation",
-            "type": "EQUALS"
-          }
-        ],
+        "enablingConditions": [],
         "help": "Match to \"new\" in technical documentation.\nTakes the value \"0\" when it is an old client and \"1\" when it is a new client."
-      },
-      {
-        "type": "TEXT",
-        "name": "confirmationDiscountCode",
-        "displayName": "Discount Code",
-        "simpleValueType": true,
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "confirmation",
-            "type": "EQUALS"
-          }
-        ],
-        "help": "Match to \"discountCode\" in technical documentation.\nRefers to the discount code applied to the order."
-      },
-      {
-        "type": "TEXT",
-        "name": "confirmationDiscountAmount",
-        "displayName": "Discount Amount",
-        "simpleValueType": true,
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "confirmation",
-            "type": "EQUALS"
-          }
-        ],
-        "help": "Match to \"discountAmount\" in technical documentation.\nRefers to the total amount of the discount applied with the coupon code."
-      },
-      {
-        "type": "GROUP",
-        "name": "AdvancedTransactionOptions",
-        "displayName": "Advanced Transaction Options",
-        "groupStyle": "ZIPPY_CLOSED",
-        "subParams": [
-          {
-            "type": "TEXT",
-            "name": "confirmationShippingPrice",
-            "displayName": "Total Shipping HT",
-            "simpleValueType": true,
-            "help": "Match to \"transactionshippingHT\" in technical documentation.\nTotal price of the delivery/shipping excluding tax.",
-            "enablingConditions": []
-          },
-          {
-            "type": "TEXT",
-            "name": "confirmationOtherPrice",
-            "displayName": "Total other price",
-            "simpleValueType": true,
-            "help": "Optional - Miscellaneous total price (e.g. the amount of the discount with promo code).",
-            "enablingConditions": []
-          },
-          {
-            "type": "TEXT",
-            "name": "confirmationDeferMode",
-            "displayName": "Defer mode",
-            "simpleValueType": true,
-            "help": "Optional - Set to \"0\" or \"1\". With the value \"1\", the order confirmation will work in deferred mode, the partner tags will not be called in real time, but after a validation from the tags will not be called in real time, but following a validation from the advertiser on the the advertiser, on the Alphalyr Marketing Studio user interface. This mode is generally used when payments are made by check. used when payments are made by check or bank transfer."
-          },
-          {
-            "type": "PARAM_TABLE",
-            "name": "confirmationCustomData",
-            "displayName": "Custom Data",
-            "paramTableColumns": [
-              {
-                "param": {
-                  "type": "TEXT",
-                  "name": "confirmationCustomDataKey",
-                  "displayName": "Key",
-                  "simpleValueType": true
-                },
-                "isUnique": false
-              },
-              {
-                "param": {
-                  "type": "TEXT",
-                  "name": "confirmationCustomDataValue",
-                  "displayName": "Value",
-                  "simpleValueType": true
-                },
-                "isUnique": false
-              }
-            ],
-            "help": "Optional - A key/value table to communicate additional data to the Alphalyr Marketing Studio solution.  Example : \u0026customData[meubles]\u003d150.55\u0026customData[hightech]\u003d1014.99"
-          }
-        ],
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "confirmation",
-            "type": "EQUALS"
-          }
-        ]
-      },
-      {
-        "type": "GROUP",
-        "name": "AdvancedCategoryOptions",
-        "displayName": "Advanced Category Options",
-        "groupStyle": "ZIPPY_CLOSED",
-        "subParams": [
-          {
-            "type": "TEXT",
-            "name": "categoryParentIds",
-            "displayName": "Parent product IDs",
-            "simpleValueType": true,
-            "help": "Optional - List of unique identifiers of parent categories, separated by the \" , \".",
-            "enablingConditions": []
-          }
-        ],
-        "enablingConditions": [
-          {
-            "paramName": "trackType",
-            "paramValue": "category",
-            "type": "EQUALS"
-          }
-        ]
-      }
-    ],
-    "enablingConditions": [
-      {
-        "paramName": "trackType",
-        "paramValue": "home",
-        "type": "NOT_EQUALS"
       }
     ]
   },
@@ -536,7 +126,7 @@ ___TEMPLATE_PARAMETERS___
     "type": "GROUP",
     "name": "GDPRConfigurations",
     "displayName": "GDPR Consent options",
-    "groupStyle": "ZIPPY_OPEN",
+    "groupStyle": "NO_ZIPPY",
     "subParams": [
       {
         "type": "TEXT",
@@ -580,10 +170,11 @@ const onFailure = () => {
   data.gtmOnFailure();
 };
 
-const ga4Map = {
-  transactionId: 'transaction_id',
-  confirmationShippingPrice: 'shipping',
-  confirmationDiscountCode: 'coupon',  
+const pageMap = {
+  view_item: 'product',
+  view_item_list: 'category',
+  view_cart: 'cart',
+  purchase: 'purchase',
 };
 
 function serverToServerCall(url, onSuccess, onFailure) {
@@ -626,13 +217,16 @@ function getData(key) {
   }
   
   d = getAllEventData();
-  key = ga4Map[key] || key;
   if (typeof(d[key]) != 'undefined') {
     return d[key];
   }
   
   if (key == 'confirmationTotalPricewithout') {
     return (d.value - d.tax - d.shipping);
+  }
+  
+  if (key == 'confirmationTotalPricewith') {
+    return (d.value - d.shipping);
   }
   
   if (key == 'confirmationDiscountAmount' && typeof(d.items) != 'undefined') {
@@ -653,42 +247,28 @@ const MARKETINGSTUDIO_LIBRARY_URL = 'https://tck.elitrack.com/';
 let finalConstructor = '';
 
 // -------- PATH CONSTRUCTOR --------
-let track = getData('trackType') || '';
-switch (track) {
-    case 'consent':
-      track = 'consent/store';
-    break;
-
-    case 'lead':
-      track = 'lead/store';
-    break;
-
-    case 'confirmation':
-      track = 'track/store';
-    break;
-
-    default:
-      track = 'tag/store';
+let track = 'tag/store';
+if (getData('event_name')) {
+    track = 'track/store';
 }
 
 let pathConstructor = track;
 
 // -------- GENERIC DATA --------
-let page = getData('trackType') || '';
+let page = pageMap[getData('event_name')] || 'home';
 let aid = getData('customerId') || '';
 let cid = getData('userEmail') || '';
 
 let genericConstructor = '?page=' + page + '&aid=' + aid + '&cid=' + cid;
 
 genericConstructor += '&uuid=' + getData('uuid');
-genericConstructor += '&referrer=' + encodeUriComponent(getData('referrer'));
+genericConstructor += '&referrer=' + encodeUriComponent(getData('page_referrer'));
 genericConstructor += '&ip_address=' + getData('ip_override');
 genericConstructor += '&user_agent=' + encodeUriComponent(getData('user_agent'));
-let pageLocation = getData('page_location') || '';
 
+let pageLocation = getData('page_location') || '';
 const parsedUrl = parseUrl(pageLocation);
 const params = {};
-
 if (parsedUrl && parsedUrl.searchParams) {
   for (let param in parsedUrl.searchParams) {
     genericConstructor += '&' + param + '=' + encodeUriComponent(parsedUrl.searchParams[param]);
@@ -699,12 +279,12 @@ let consentConstructor = '?aid=' + aid;
 
 
 // -------- PRODUCT PAGE DATA --------
-let prodId = getData('productId') || '';
-let prodDescription = getData('productDescription') || '';
-let prodPrice = getData('productPrice') || '';
-let catIds = getData('categoryId') || '';
-
-let productPageConstructor = '&prodId=' + prodId + '&prodDescription=' + prodDescription + '&prodPrice=' + prodPrice + '&catIds=' + catIds;
+let items = getData('items');
+let item = items[0];
+let prodId = item.item_id || '';
+let prodDescription = item.item_name || '';
+let prodPrice = getData('value') || '';
+let productPageConstructor = '&prodId=' + prodId + '&prodDescription=' + prodDescription + '&prodPrice=' + prodPrice;
 
 
 // -------- PRODUCT ARRAY DATA --------
@@ -713,43 +293,25 @@ let currency = getData('currency') || '';
 
 
 // -------- CATEGORY PAGE DATA --------
-let catId = getData('categoryId') || '';
-let catDescription = getData('categoryDescription') || '';
-let parentIds = getData('categoryParentIds') || '';
-
-let categoryPageConstructor = '&catId=' + catId + '&catDescription=' + catDescription + '&parentIds=' + parentIds;
+let catId = getData('item_list_id') || '';
+let catDescription = getData('item_list_name') || '';
+let categoryPageConstructor = '&catId=' + catId + '&catDescription=' + catDescription;
 
 // -------- CART PAGE DATA --------
-let cartTotalPrice = data.basketTotalPrice || '';
-
+let cartTotalPrice = getData('value') || '';
 let cartPageConstructor = '&products=' + products + '&totalPrice=' + cartTotalPrice + '&currency=' + currency;
 
 
-// -------- ADD TO CART DATA --------
-let addTotalPrice = getData('addTotalPrice') || '';
-
-let cartAddConstructor = '&products=' + products + '&totalPrice=' + addTotalPrice + '&currency=' + currency;
-
 // -------- TRANSACTION DATA --------
-let referenceTransaction = getData('transactionId') || '';
+let referenceTransaction = getData('transaction_id') || '';
 let transactionTotalPrice = getData('confirmationTotalPricewithout') || '';
 let totalPriceWithTax = getData('confirmationTotalPricewith') || '';
-let shippingPrice = getData('confirmationShippingPrice') || '';
-let otherPrice = getData('confirmationOtherPrice') || '';
+let shippingPrice = getData('shipping') || '';
 let clientType = getData('confirmationCustomerType') || '';
-let discountCode = getData('confirmationDiscountCode') || '';
+let discountCode = getData('coupon') || '';
 let discountAmount = getData('confirmationDiscountAmount') || '';
-let defer = getData('confirmationDeferMode') || '';
-let customDataKey = '';
-let customDataValue = '';
 
-let transactionPageConstructor = '&products=' + products + '&totalPrice=' + transactionTotalPrice + '&totalPriceWithTax=' + totalPriceWithTax + '&shippingPrice=' + shippingPrice + '&otherPrice=' + otherPrice + '&reference=' + referenceTransaction + '&new=' + clientType + '&currency=' + currency + '&discountCode=' + discountCode + '&discountAmount=' + discountAmount + '&defer=' + defer;
-
-// -------- LEAD CONFIRMATION DATA --------
-let leadreference = getData('leadTransactionId') || '';
-
-let leadPageConstructor = '&reference=' + leadreference;
-
+let transactionPageConstructor = '&products=' + products + '&totalPrice=' + transactionTotalPrice + '&totalPriceWithTax=' + totalPriceWithTax + '&shippingPrice=' + shippingPrice + '&reference=' + referenceTransaction + '&new=' + clientType + '&currency=' + currency + '&discountCode=' + discountCode + '&discountAmount=' + discountAmount;
 
 
 // -------- GDPR Consent Constructor DATA --------
@@ -768,44 +330,22 @@ if (consent_performance == null || consent_performance == '' || consent_performa
 let gdprConstructor = '&gdpr_consent=' + gdpr_consent + '&consent_ads=' + consent_ads + '&consent_performance=' + consent_performance;
 
 // -------- TRACKER CONSTRUCTOR --------
-let tracker = getData('trackType');
-switch (tracker) {
+switch (page) {
     case 'home':
         finalConstructor = pathConstructor + genericConstructor + gdprConstructor;
     break;
-
     case 'category':
         finalConstructor = pathConstructor + genericConstructor + categoryPageConstructor + gdprConstructor;
     break;
-
     case 'product':
         finalConstructor = pathConstructor + genericConstructor + productPageConstructor + gdprConstructor;
     break;
-
     case 'cart':
         finalConstructor = pathConstructor + genericConstructor + cartPageConstructor + gdprConstructor;
     break;
-
-    case 'AddToCart':
-        finalConstructor = pathConstructor + genericConstructor + cartAddConstructor + gdprConstructor;
-    break;
-
-    case 'confirmation':
+    case 'purchase':
         finalConstructor = pathConstructor + genericConstructor + transactionPageConstructor + gdprConstructor;
     break;
-
-    case 'consentping':
-       finalConstructor = pathConstructor + consentConstructor + gdprConstructor;
-    break;
-
-    case 'lead':
-        finalConstructor = pathConstructor + genericConstructor + leadPageConstructor + gdprConstructor;
-    break;
-
-    case 'other':
-        finalConstructor = pathConstructor + genericConstructor + gdprConstructor;
-    break;
-
     default: finalConstructor = pathConstructor + genericConstructor + gdprConstructor;
 
 }
